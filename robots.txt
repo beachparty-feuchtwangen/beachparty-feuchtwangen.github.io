@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://beachparty-feuchtwangen.github.io/sitemap.xml
