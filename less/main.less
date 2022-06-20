@@ -16,8 +16,6 @@ html, body {
 }
 
 img {
-    /*width: 340%;
-    left: -45%;*/
     width: 100%;
     position: absolute;
     z-index: -99;
@@ -84,6 +82,16 @@ h3 {
         display: grid;
         grid-template-columns: 50% 50%;
     
+        .place,
+        .time {
+            transition: all 300ms ease;
+            transition-property: transform;
+            
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+        
         .time {
             text-align: right;
         }
