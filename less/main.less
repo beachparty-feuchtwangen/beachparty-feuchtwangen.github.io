@@ -28,6 +28,10 @@ h1 {
     padding: 0;
     margin: 18px 0 0 0;
     font-weight: bold;
+    
+    @media(max-width: @xs-max) {
+        font-size: 7.4vw;
+    }
 }
 
 h3 {
@@ -38,12 +42,23 @@ h3 {
     border-top: 3px solid black;
     border-bottom: 3px solid black;
     letter-spacing: 1px;
+    color: white;
+    
+    @media(max-width: @xs-max) {
+        font-size: 4.8vw;
+        margin-top: 8px;
+    }
 }
 
 .content {
     margin: 45px 7% 0 7%;
     color: white;
     font-size: 2.45vw;
+    
+    @media(max-width: @xs-max) {
+        font-size: 5.5vw;
+        margin-top: 28px;
+    }
     
     .facebook {
         text-align: center;
@@ -55,8 +70,12 @@ h3 {
             text-decoration: none;
             transition: all 300ms ease;
             transition-property: color, transform;
-            width: 46%;
+            width: 56%;
             text-align: center;
+            
+            @media(max-width: @xs-max) {
+                width: 66%;
+            }
             
             &:hover {
                 color: #1b76f2;
@@ -73,6 +92,10 @@ h3 {
                     color: @facebook-color;
                     font-size: 3vw;
                     margin: -0.3% 0 0 -1.25%;
+                    
+                    @media(max-width: @xs-max) {
+                        font-size: 6vw;
+                    }
                 }
             }
         }
@@ -81,6 +104,10 @@ h3 {
     .before {
         display: grid;
         grid-template-columns: 50% 50%;
+        
+        @media(max-width: @xs-max) {
+            font-size: 4.6vw;
+        }
     
         .place,
         .time {
@@ -108,6 +135,16 @@ h3 {
         
         .lineup {
             font-weight: bold;
+            transition: all 300ms ease;
+            transition-property: transform;
+            
+            &:hover {
+                transform: scale(1.2);
+            }
+            
+            @media(max-width: @xs-max) {
+                color: red;
+            }
         
             ul {
                 font-weight: normal;
